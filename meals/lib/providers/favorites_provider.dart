@@ -19,6 +19,5 @@ class FavoriteMealsNotifier extends StateNotifier<List<Meal>> {
 
 // StateNotifierProvider: Is a provider that is used for listening changes; the dynamic stuffs
 final favoriteMealsProvider =
-    StateNotifierProvider<FavoriteMealsNotifier, List<Meal>>((ref) {
-  return FavoriteMealsNotifier();
-});
+    StateNotifierProvider<FavoriteMealsNotifier, List<Meal>>(
+        (ref) => FavoriteMealsNotifier());
